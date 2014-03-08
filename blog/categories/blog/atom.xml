@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: blog | Mark's note]]></title>
+  <link href="http://dearmark.tk/blog/categories/blog/atom.xml" rel="self"/>
+  <link href="http://dearmark.tk/"/>
+  <updated>2014-03-09T02:35:11+08:00</updated>
+  <id>http://dearmark.tk/</id>
+  <author>
+    <name><![CDATA[Mark Weng]]></name>
+    <email><![CDATA[treesea20@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Install Octopress]]></title>
+    <link href="http://dearmark.tk/blog/2014/03/09/install-octopress/"/>
+    <updated>2014-03-09T02:04:19+08:00</updated>
+    <id>http://dearmark.tk/blog/2014/03/09/install-octopress</id>
+    <content type="html"><![CDATA[<p>用Octopress搭建一个Github博客</p>
+]]></content>
+  </entry>
+  
+</feed>
