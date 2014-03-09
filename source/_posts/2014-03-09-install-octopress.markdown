@@ -23,7 +23,7 @@ categories:
 rake gen_deploy
 git commit -am "`date`" && git push origin source
 ```
-_or_
+_OR_
 ``` bash micro script to simplify the publish process http://blog.revolunet.com/blog/2013/04/15/octopress-cheatsheet/
 #!/bin/sh
 # push.sh : publish & commit with a single command
