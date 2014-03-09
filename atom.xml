@@ -4,7 +4,7 @@
   <title><![CDATA[Mark's note]]></title>
   <link href="http://dearmark.tk/atom.xml" rel="self"/>
   <link href="http://dearmark.tk/"/>
-  <updated>2014-03-09T03:18:57+08:00</updated>
+  <updated>2014-03-09T19:26:22+08:00</updated>
   <id>http://dearmark.tk/</id>
   <author>
     <name><![CDATA[Mark Weng]]></name>
@@ -14,11 +14,45 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Install Octopress]]></title>
+    <title type="html"><![CDATA[Install and Config Octopress]]></title>
     <link href="http://dearmark.tk/blog/2014/03/09/install-octopress/"/>
     <updated>2014-03-09T02:04:19+08:00</updated>
     <id>http://dearmark.tk/blog/2014/03/09/install-octopress</id>
-    <content type="html"><![CDATA[<p>用Octopress搭建一个Github博客</p>
+    <content type="html"><![CDATA[<p><img src="http://dearmark.tk/images/logo.png" title="Logo" ></p>
+
+<h2>Octepress装得差不多了，记录一些事情</h2>
+
+<ul>
+<li><p>要在文章中上传图片，直接copy到/source/images目录下即可。在文章中用 <code>&lt;img src="http://dearmark.tk/images/pic_name.png" title="Caption" &gt;</code>来引用即可</p></li>
+<li><p>在文章中插入代码，用<code>```[language] 这儿放你要插入的代码即可。```</code></p></li>
+<li>在html中插入图片，如about me部分。<code>&lt;p&gt;&lt;img src="http://dearmark.tk/images/pic_name.png"&gt;&lt;/p&gt;</code></li>
+<li>rake watch 检测文件变化，实时生成新内容</li>
+<li>在定制文件<code>/source/_includes/custom/head.html</code>把google的自定义字体去掉</li>
+<li>If you are working on a multi-author blog, you can add <code>author: Your Name</code> to the metadata for proper attribution on a post. If you are working on a draft, you can add <code>published: false</code> to prevent it from being posted when you generate your blog. <strong>If you set published: false, your posts will only be visible in preview mode.</strong></li>
+<li>Commit</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rake gen_deploy
+</span><span class='line'>git commit -am "`date`" && git push origin source</span></code></pre></td></tr></table></div></figure>
+
+
+<p><em>or</em></p>
+
+<figure class='code'><figcaption><span>micro script to simplify the publish process</span><a href='http://blog.revolunet.com/blog/2013/04/15/octopress-cheatsheet/'>link</a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="c">#!/bin/sh</span>
+</span><span class='line'><span class="c"># push.sh : publish &amp; commit with a single command</span>
+</span><span class='line'>git add <span class="nb">source</span>
+</span><span class='line'>git commit -am <span class="s2">&quot;`date`&quot;</span> <span class="o">&amp;&amp;</span> git push origin <span class="nb">source</span>
+</span><span class='line'>rake gen_deploy
+</span></code></pre></td></tr></table></div></figure>
+
 ]]></content>
   </entry>
   

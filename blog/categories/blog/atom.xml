@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Blog | Mark's note]]></title>
   <link href="http://dearmark.tk/blog/categories/blog/atom.xml" rel="self"/>
   <link href="http://dearmark.tk/"/>
-  <updated>2014-03-09T03:18:57+08:00</updated>
+  <updated>2014-03-09T19:26:22+08:00</updated>
   <id>http://dearmark.tk/</id>
   <author>
     <name><![CDATA[Mark Weng]]></name>
@@ -14,11 +14,39 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Install Octopress]]></title>
+    <title type="html"><![CDATA[Install and Config Octopress]]></title>
     <link href="http://dearmark.tk/blog/2014/03/09/install-octopress/"/>
     <updated>2014-03-09T02:04:19+08:00</updated>
     <id>http://dearmark.tk/blog/2014/03/09/install-octopress</id>
-    <content type="html"><![CDATA[<p>用Octopress搭建一个Github博客</p>
+    <content type="html"><![CDATA[<p><img src="/images/logo.png" title="Logo" ></p>
+
+<h2>Octepress装得差不多了，记录一些事情</h2>
+
+<ul>
+<li><p>要在文章中上传图片，直接copy到/source/images目录下即可。在文章中用 <code><img src="/images/pic_name.png" title="Caption" ></code>来引用即可</p></li>
+<li><p>在文章中插入代码，用<code>```[language] 这儿放你要插入的代码即可。```</code></p></li>
+<li>在html中插入图片，如about me部分。<code>&lt;p&gt;&lt;img src="http://dearmark.tk/images/pic_name.png"&gt;&lt;/p&gt;</code></li>
+<li>rake watch 检测文件变化，实时生成新内容</li>
+<li>在定制文件<code>/source/_includes/custom/head.html</code>把google的自定义字体去掉</li>
+<li>If you are working on a multi-author blog, you can add <code>author: Your Name</code> to the metadata for proper attribution on a post. If you are working on a draft, you can add <code>published: false</code> to prevent it from being posted when you generate your blog. <strong>If you set published: false, your posts will only be visible in preview mode.</strong></li>
+<li>Commit
+<code>
+rake gen_deploy
+git commit -am "`date`" &amp;&amp; git push origin source
+</code>
+<em>or</em>
+``` bash micro script to simplify the publish process <a href="http://blog.revolunet.com/blog/2013/04/15/octopress-cheatsheet/">http://blog.revolunet.com/blog/2013/04/15/octopress-cheatsheet/</a>
+
+<h1>!/bin/sh</h1>
+
+<h1>push.sh : publish &amp; commit with a single command</h1>
+
+<p>git add source
+git commit -am &ldquo;<code>date</code>&rdquo; &amp;&amp; git push origin source
+rake gen_deploy
+```</p></li>
+</ul>
+
 ]]></content>
   </entry>
   
