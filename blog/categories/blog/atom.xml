@@ -4,7 +4,7 @@
   <title><![CDATA[Category: blog | Mark's note]]></title>
   <link href="http://dearmark.tk/blog/categories/blog/atom.xml" rel="self"/>
   <link href="http://dearmark.tk/"/>
-  <updated>2014-03-10T02:49:45+08:00</updated>
+  <updated>2014-03-10T03:29:45+08:00</updated>
   <id>http://dearmark.tk/</id>
   <author>
     <name><![CDATA[Mark Weng]]></name>
@@ -34,7 +34,7 @@
 rake gen_deploy
 git commit -am "`date`" &amp;&amp; git push origin source
 </code>
-<em>or</em>
+<em>OR</em>
 ``` bash micro script to simplify the publish process <a href="http://blog.revolunet.com/blog/2013/04/15/octopress-cheatsheet/">http://blog.revolunet.com/blog/2013/04/15/octopress-cheatsheet/</a>
 
 <h1>!/bin/sh</h1>

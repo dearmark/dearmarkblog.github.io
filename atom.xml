@@ -4,7 +4,7 @@
   <title><![CDATA[Mark's note]]></title>
   <link href="http://dearmark.tk/atom.xml" rel="self"/>
   <link href="http://dearmark.tk/"/>
-  <updated>2014-03-10T02:49:45+08:00</updated>
+  <updated>2014-03-10T03:29:45+08:00</updated>
   <id>http://dearmark.tk/</id>
   <author>
     <name><![CDATA[Mark Weng]]></name>
@@ -215,7 +215,7 @@ git branch --set-upstream develop origin/develop
 </span><span class='line'>git commit -am "`date`" && git push origin source</span></code></pre></td></tr></table></div></figure>
 
 
-<p><em>or</em></p>
+<p><em>OR</em></p>
 
 <figure class='code'><figcaption><span>micro script to simplify the publish process</span><a href='http://blog.revolunet.com/blog/2013/04/15/octopress-cheatsheet/'>link</a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
