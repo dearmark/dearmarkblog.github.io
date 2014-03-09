@@ -9,8 +9,10 @@
   <meta name="author" content="Mark Weng">
 
   
-  <meta name="description" content="Blog Archive 2014 Install and Config Octopress
-Mar 09 2014 posted in blog, octopresss Recent Posts Install and Config Octopress GitHub Repos Status &hellip;">
+  <meta name="description" content="Blog Archive 2014 git命令
+Mar 09 2014 posted in git, note Markdown 语法
+Mar 09 2014 posted in markdown, 写作 Install and Config Octopress
+Mar 09 2014 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,14 +21,14 @@ Mar 09 2014 posted in blog, octopresss Recent Posts Install and Config Octopress
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://dearmark.tk/blog/archives">
+  <link rel="canonical" href="http://dearmark.tk/blog/archives/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <link href="/atom.xml" rel="alternate" title="Mark's note" type="application/atom+xml">
   <script src="/javascripts/modernizr-2.0.js"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/ender.js"></script>
   <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="Mark's note" type="application/atom+xml">
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
 <link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
@@ -49,10 +51,17 @@ Mar 09 2014 posted in blog, octopresss Recent Posts Install and Config Octopress
 
 <body   >
   <header role="banner"><hgroup>
+  <div id="logo">
+  	<div id="logoLeft">{</div>
+  	<div id="logoText">rake</div>
+  	<div id="logoRight">}</div>
+  	<div class="clear"></div>
+  </div>
   <h1><a href="/">Mark's note</a></h1>
   
-    <h2>note something</h2>
+    <h2>&nbsp;&nbsp;something</h2>
   
+  <div class="clear"></div>
 </hgroup>
 
 </header>
@@ -93,6 +102,34 @@ Mar 09 2014 posted in blog, octopresss Recent Posts Install and Config Octopress
 
 <article>
   
+<h1><a href="/blog/2014/03/09/git-command/">git命令</a></h1>
+<time datetime="2014-03-09T19:39:36+08:00" pubdate><span class='month'>Mar</span> <span class='day'>09</span> <span class='year'>2014</span></time>
+
+<footer>
+  <span class="categories">posted in <a class='category' href='/blog/categories/git/'>git</a>, <a class='category' href='/blog/categories/note/'>note</a></span>
+</footer>
+
+
+</article>
+
+
+
+<article>
+  
+<h1><a href="/blog/2014/03/09/markdown-yu-fa/">Markdown 语法</a></h1>
+<time datetime="2014-03-09T19:36:08+08:00" pubdate><span class='month'>Mar</span> <span class='day'>09</span> <span class='year'>2014</span></time>
+
+<footer>
+  <span class="categories">posted in <a class='category' href='/blog/categories/markdown/'>markdown</a>, <a class='category' href='/blog/categories/xie-zuo/'>写作</a></span>
+</footer>
+
+
+</article>
+
+
+
+<article>
+  
 <h1><a href="/blog/2014/03/09/install-octopress/">Install and Config Octopress</a></h1>
 <time datetime="2014-03-09T02:04:19+08:00" pubdate><span class='month'>Mar</span> <span class='day'>09</span> <span class='year'>2014</span></time>
 
@@ -117,6 +154,14 @@ Mar 09 2014 posted in blog, octopresss Recent Posts Install and Config Octopress
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2014/03/09/git-command/">Git命令</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/03/09/markdown-yu-fa/">Markdown 语法</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2014/03/09/install-octopress/">Install and Config Octopress</a>
       </li>
     
@@ -132,7 +177,7 @@ Mar 09 2014 posted in blog, octopresss Recent Posts Install and Config Octopress
   <a href="https://github.com/dearmark">@dearmark</a> on GitHub
   
   <script type="text/javascript">
-    $(document).ready(function(){
+    $.domReady(function(){
         if (!window.jXHR){
             var jxhr = document.createElement('script');
             jxhr.type = 'text/javascript';
@@ -178,7 +223,7 @@ Mar 09 2014 posted in blog, octopresss Recent Posts Install and Config Octopress
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
       (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
     }());
 </script>

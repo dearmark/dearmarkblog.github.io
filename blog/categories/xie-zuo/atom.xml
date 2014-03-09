@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: 写作 | Mark's note]]></title>
+  <link href="http://dearmark.tk/blog/categories/xie-zuo/atom.xml" rel="self"/>
+  <link href="http://dearmark.tk/"/>
+  <updated>2014-03-09T22:55:27+08:00</updated>
+  <id>http://dearmark.tk/</id>
+  <author>
+    <name><![CDATA[Mark Weng]]></name>
+    <email><![CDATA[treesea20@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Markdown 语法]]></title>
+    <link href="http://dearmark.tk/blog/2014/03/09/markdown-yu-fa/"/>
+    <updated>2014-03-09T19:36:08+08:00</updated>
+    <id>http://dearmark.tk/blog/2014/03/09/markdown-yu-fa</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
+  
+</feed>
