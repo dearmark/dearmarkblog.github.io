@@ -4,7 +4,7 @@
   <title><![CDATA[Mark's note]]></title>
   <link href="http://dearmark.tk/atom.xml" rel="self"/>
   <link href="http://dearmark.tk/"/>
-  <updated>2014-03-10T03:29:45+08:00</updated>
+  <updated>2014-03-10T03:34:57+08:00</updated>
   <id>http://dearmark.tk/</id>
   <author>
     <name><![CDATA[Mark Weng]]></name>
@@ -204,7 +204,8 @@ git branch --set-upstream develop origin/develop
 <li>在html中插入图片，如about me部分。<code>&lt;p&gt;&lt;img src="http://dearmark.tk/images/pic_name.png"&gt;&lt;/p&gt;</code></li>
 <li>rake watch 检测文件变化，实时生成新内容</li>
 <li>在定制文件<code>/source/_includes/custom/head.html</code>把google的自定义字体去掉</li>
-<li>If you are working on a multi-author blog, you can add <code>author: Your Name</code> to the metadata for proper attribution on a post. If you are working on a draft, you can add <code>published: false</code> to prevent it from being posted when you generate your blog. <strong>If you set published: false, your posts will only be visible in preview mode.</strong></li>
+<li>If you are working on a multi-author blog, you can add <code>author: Your Name</code> to the metadata for proper attribution on a post. If you are working on a draft, you can add <code>published: false</code> to prevent it from being posted when you generate your blog.
+<strong>If you set published: false, your posts will only be visible in preview mode.</strong></li>
 <li>Commit</li>
 </ul>
 
