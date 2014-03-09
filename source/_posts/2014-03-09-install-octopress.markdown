@@ -17,7 +17,8 @@ categories:
 * 在html中插入图片，如about me部分。`<p><img src="/images/pic_name.png"></p>`
 * rake watch 检测文件变化，实时生成新内容
 * 在定制文件`/source/_includes/custom/head.html `把google的自定义字体去掉
-* If you are working on a multi-author blog, you can add `author: Your Name` to the metadata for proper attribution on a post. If you are working on a draft, you can add `published: false` to prevent it from being posted when you generate your blog. **If you set published: false, your posts will only be visible in preview mode.**
+* If you are working on a multi-author blog, you can add `author: Your Name` to the metadata for proper attribution on a post. If you are working on a draft, you can add `published: false` to prevent it from being posted when you generate your blog. 
+**If you set published: false, your posts will only be visible in preview mode.**
 * Commit
 ```
 rake gen_deploy
