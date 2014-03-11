@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: fail2ban | Mark's note]]></title>
+  <link href="http://dearmark.tk/blog/categories/fail2ban/atom.xml" rel="self"/>
+  <link href="http://dearmark.tk/"/>
+  <updated>2014-03-12T00:50:50+08:00</updated>
+  <id>http://dearmark.tk/</id>
+  <author>
+    <name><![CDATA[Mark Weng]]></name>
+    <email><![CDATA[treesea20@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[config Fail2Ban]]></title>
+    <link href="http://dearmark.tk/blog/2014/03/12/config-fail2ban/"/>
+    <updated>2014-03-12T00:25:23+08:00</updated>
+    <id>http://dearmark.tk/blog/2014/03/12/config-fail2ban</id>
+    <content type="html"><![CDATA[<p>Fail2Ban 是一款用 Python 代码编写的入侵防御软件，它可以分析多种服务的日志文件 (例如 ssh apache postfix mysql 等) 来侦测可能的暴力攻击，并且自动创建防火墙 (例如 iptables) 规则来达到阻止攻击源访问的目的</p>
+
+<p>这里以 Debian 为例，仅考虑如何防御 ssh 攻击的情况 (例如: 多次用不存在的用户名创建 ssh 连接，多次使用不同密码尝试登陆某 ssh 账户)，安装配置步骤如下</p>
+
+<ol>
+<li><p>安装
+<code>bash
+ apt-get update
+ apt-get install fail2ban
+</code></p></li>
+<li><p>(从 jail.conf 模板) 创建配置文件 jail.local
+<code>bash
+ cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local
+</code></p></li>
+<li><p>编辑配置文件
+<code>bash
+ nano /etc/fail2ban/jail.local
+</code></p></li>
+<li><p>主要可以考虑配置的几个地方
+``` bash
+ [DEFAULT]
+ ignoreip  白名单 IP 地址
+ bantime 被禁时间长度 (秒)
+ maxretry 多少次尝试攻击即可以考虑被禁止</p>
+
+<p> [ssh] 这个分支是默认开启的
+ enabled = true
+ port    = ssh
+ filter  = sshd
+ logpath  = /var/log/auth.log
+ maxretry = 6
+```</p></li>
+<li>重启 Fai2Ban 服务来应用新的配置</li>
+</ol>
+
+
+<p>``` bash</p>
+
+<pre><code>/etc/init.d/fail2ban restart
+</code></pre>
+
+<p>```</p>
+
+<ol>
+<li>就这么简单，其他的功能可以在配置文件内自行发挥</li>
+</ol>
+
+]]></content>
+  </entry>
+  
+</feed>

@@ -4,7 +4,7 @@
   <title><![CDATA[Mark's note]]></title>
   <link href="http://dearmark.tk/atom.xml" rel="self"/>
   <link href="http://dearmark.tk/"/>
-  <updated>2014-03-11T20:54:22+08:00</updated>
+  <updated>2014-03-12T00:50:50+08:00</updated>
   <id>http://dearmark.tk/</id>
   <author>
     <name><![CDATA[Mark Weng]]></name>
@@ -12,6 +12,94 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[config Fail2Ban]]></title>
+    <link href="http://dearmark.tk/blog/2014/03/12/config-fail2ban/"/>
+    <updated>2014-03-12T00:25:23+08:00</updated>
+    <id>http://dearmark.tk/blog/2014/03/12/config-fail2ban</id>
+    <content type="html"><![CDATA[<p>Fail2Ban 是一款用 Python 代码编写的入侵防御软件，它可以分析多种服务的日志文件 (例如 ssh apache postfix mysql 等) 来侦测可能的暴力攻击，并且自动创建防火墙 (例如 iptables) 规则来达到阻止攻击源访问的目的</p>
+
+<p>这里以 Debian 为例，仅考虑如何防御 ssh 攻击的情况 (例如: 多次用不存在的用户名创建 ssh 连接，多次使用不同密码尝试登陆某 ssh 账户)，安装配置步骤如下</p>
+
+<ol>
+<li>安装</li>
+</ol>
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>apt-get update
+</span><span class='line'>apt-get install fail2ban
+</span></code></pre></td></tr></table></div></figure>
+
+
+<ol>
+<li>(从 jail.conf 模板) 创建配置文件 jail.local</li>
+</ol>
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local
+</span></code></pre></td></tr></table></div></figure>
+
+
+<ol>
+<li>编辑配置文件</li>
+</ol>
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>nano /etc/fail2ban/jail.local
+</span></code></pre></td></tr></table></div></figure>
+
+
+<ol>
+<li>主要可以考虑配置的几个地方</li>
+</ol>
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="o">[</span>DEFAULT<span class="o">]</span>
+</span><span class='line'>ignoreip  白名单 IP 地址
+</span><span class='line'>bantime 被禁时间长度 <span class="o">(</span>秒<span class="o">)</span>
+</span><span class='line'>maxretry 多少次尝试攻击即可以考虑被禁止
+</span><span class='line'>
+</span><span class='line'><span class="o">[</span>ssh<span class="o">]</span> 这个分支是默认开启的
+</span><span class='line'><span class="nv">enabled</span> <span class="o">=</span> <span class="nb">true</span>
+</span><span class='line'><span class="nv">port</span>    <span class="o">=</span> ssh
+</span><span class='line'><span class="nv">filter</span>  <span class="o">=</span> sshd
+</span><span class='line'><span class="nv">logpath</span>  <span class="o">=</span> /var/log/auth.log
+</span><span class='line'><span class="nv">maxretry</span> <span class="o">=</span> 6
+</span></code></pre></td></tr></table></div></figure>
+
+
+<ol>
+<li>重启 Fai2Ban 服务来应用新的配置</li>
+</ol>
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>/etc/init.d/fail2ban restart
+</span></code></pre></td></tr></table></div></figure>
+
+
+<ol>
+<li>就这么简单，其他的功能可以在配置文件内自行发挥</li>
+</ol>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[apt-get command]]></title>
