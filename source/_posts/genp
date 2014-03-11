@@ -1,0 +1,3 @@
+#!/bin/sh
+# push.sh : publish & commit with a single command
+rake generate && rake preview
