@@ -27,9 +27,9 @@
   <link href="/atom.xml" rel="alternate" title="Mark's note" type="application/atom+xml">
   <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
-<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<!-- <link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-
+ -->
   
   <script type="text/javascript">
     var _gaq = _gaq || [];
@@ -116,27 +116,18 @@
 
 <p>这里以 Debian 为例，仅考虑如何防御 ssh 攻击的情况 (例如: 多次用不存在的用户名创建 ssh 连接，多次使用不同密码尝试登陆某 ssh 账户)，安装配置步骤如下</p>
 
-<ol>
-<li>安装</li>
-</ol>
+<p>1安装</p>
 
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>apt-get update
-</span><span class='line'>apt-get install fail2ban
-</span></code></pre></td></tr></table></div></figure>
-
+<pre><code>apt-get update
+apt-get install fail2ban
+</code></pre>
 
 <ol>
 <li>(从 jail.conf 模板) 创建配置文件 jail.local</li>
 </ol>
 
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local
-</span></code></pre></td></tr></table></div></figure>
-
+<p>cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local`</p>
 
 <ol>
 <li>编辑配置文件</li>

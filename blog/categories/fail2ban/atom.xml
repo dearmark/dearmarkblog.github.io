@@ -4,7 +4,7 @@
   <title><![CDATA[Category: fail2ban | Mark's note]]></title>
   <link href="http://dearmark.tk/blog/categories/fail2ban/atom.xml" rel="self"/>
   <link href="http://dearmark.tk/"/>
-  <updated>2014-03-12T00:50:50+08:00</updated>
+  <updated>2014-03-12T03:08:00+08:00</updated>
   <id>http://dearmark.tk/</id>
   <author>
     <name><![CDATA[Mark Weng]]></name>
@@ -22,16 +22,20 @@
 
 <p>这里以 Debian 为例，仅考虑如何防御 ssh 攻击的情况 (例如: 多次用不存在的用户名创建 ssh 连接，多次使用不同密码尝试登陆某 ssh 账户)，安装配置步骤如下</p>
 
+<p>1安装</p>
+
+<pre><code>apt-get update
+apt-get install fail2ban
+</code></pre>
+
 <ol>
-<li><p>安装
-<code>bash
- apt-get update
- apt-get install fail2ban
-</code></p></li>
-<li><p>(从 jail.conf 模板) 创建配置文件 jail.local
-<code>bash
- cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local
-</code></p></li>
+<li>(从 jail.conf 模板) 创建配置文件 jail.local</li>
+</ol>
+
+
+<p>cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local`</p>
+
+<ol>
 <li><p>编辑配置文件
 <code>bash
  nano /etc/fail2ban/jail.local
