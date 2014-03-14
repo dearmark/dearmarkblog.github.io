@@ -42,8 +42,7 @@ cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local`
 ```
 5. 重启 Fai2Ban 服务来应用新的配置
 
-``` bash
 	/etc/init.d/fail2ban restart
-```
+
 
 6. 就这么简单，其他的功能可以在配置文件内自行发挥
