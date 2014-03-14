@@ -4,7 +4,7 @@
   <title><![CDATA[Mark's note]]></title>
   <link href="http://dearmark.tk/atom.xml" rel="self"/>
   <link href="http://dearmark.tk/"/>
-  <updated>2014-03-12T03:08:00+08:00</updated>
+  <updated>2014-03-14T22:06:20+08:00</updated>
   <id>http://dearmark.tk/</id>
   <author>
     <name><![CDATA[Mark Weng]]></name>
@@ -76,17 +76,10 @@ apt-get install fail2ban
 
 
 <ol>
-<li>重启 Fai2Ban 服务来应用新的配置</li>
-</ol>
+<li><p>重启 Fai2Ban 服务来应用新的配置</p>
 
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'>/etc/init.d/fail2ban restart
-</span></code></pre></td></tr></table></div></figure>
-
-
-<ol>
-<li>就这么简单，其他的功能可以在配置文件内自行发挥</li>
+<p> /etc/init.d/fail2ban restart</p></li>
+<li><p>就这么简单，其他的功能可以在配置文件内自行发挥</p></li>
 </ol>
 
 ]]></content>
