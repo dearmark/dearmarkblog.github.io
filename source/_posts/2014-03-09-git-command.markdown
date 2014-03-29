@@ -150,3 +150,12 @@ Mac上可以使用tig代替diff和log，`brew install tig`
 
     git branch --set-upstream master origin/master
     git branch --set-upstream develop origin/develop
+
+###Git Blame
+如果你要查看文件的每个部分是谁修改的, 那么 git blame 就是不二选择. 只要运行'git blame [filename]', 你就会得到整个文件的每一行的详细修改信息:包括SHA串,日期和作者
+
+    git blame sha1_file.c
+
+可以用"-L"参数在命令(blame)中指定开始和结束行
+
+    git blame -L 160,+10 sha1_file.c 

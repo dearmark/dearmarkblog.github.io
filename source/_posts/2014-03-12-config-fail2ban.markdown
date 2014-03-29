@@ -18,7 +18,7 @@ Fail2Ban 是一款用 Python 代码编写的入侵防御软件，它可以分析
 
 2. (从 jail.conf 模板) 创建配置文件 jail.local
 
-cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local`
+	cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local
 
 
 3. 编辑配置文件
