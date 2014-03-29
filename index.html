@@ -9,8 +9,8 @@
   <meta name="author" content="Mark Weng">
 
   
-  <meta name="description" content="
-">
+  <meta name="description" content="Jump To A Directory That Contains foo: j foo Jump To A Child Directory Sometimes it&rsquo;s convenient to jump to a child directory
+(sub-directory &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -85,6 +85,88 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <!-- Now we're back to normal posts. Note the links used under href in both headers.-->
+        <h1 class="entry-title"><a href="/blog/2014/03/30/autojump%E5%A4%87%E5%BF%98/">Autojump备忘</a></h1>
+      
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-03-30T03:06:10+08:00" pubdate data-updated="true">Mar 30<span>th</span>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><ul>
+<li><p>Jump To A Directory That Contains <code>foo</code>:</p>
+
+<pre><code>j foo
+</code></pre></li>
+<li><p>Jump To A Child Directory</p>
+
+<p>Sometimes it&rsquo;s convenient to jump to a child directory
+(sub-directory of current directory) rather than typing out the full
+name.</p>
+
+<pre><code>jc bar
+</code></pre></li>
+<li><p>Open File Manager To Directories (instead of jumping):</p>
+
+<p>Instead of jumping to a directory, you can open a file explorer
+window (Mac Finder, Windows Explorer, GNOME Nautilus, etc.) to the
+directory instead.</p>
+
+<pre><code>jo music
+</code></pre>
+
+<p>Opening a file manager to a child directory is also supported.</p>
+
+<pre><code>jco images
+</code></pre></li>
+<li><p>Using Multiple Arguments:</p>
+
+<p> Let&rsquo;s assume the following database:</p>
+
+<pre><code> 30   /home/user/mail/inbox
+ 10   /home/user/work/inbox
+</code></pre>
+
+<p> <code>j in</code> would jump into /home/user/mail/inbox as the higher weighted
+ entry. However you can pass multiple arguments to autojump to prefer
+ a different entry. In the above example, <code>j w in</code> would then change
+ directory to /home/user/work/inbox.</p></li>
+</ul>
+
+
+<p>For more options refer to help:</p>
+
+<pre><code>autojump --help
+</code></pre>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -347,6 +429,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2014/03/30/autojump%E5%A4%87%E5%BF%98/">Autojump备忘</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2014/03/22/bash-command/">Bash Command</a>
       </li>
     
@@ -362,10 +448,6 @@
         <a href="/blog/2014/03/09/git-command/">Git命令</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2014/03/09/markdown%E8%AF%AD%E6%B3%95/">Markdown 语法</a>
-      </li>
-    
   </ul>
 </section>
 
@@ -373,11 +455,11 @@
 
 <section>
   <h1>Categories</h1>
-    <ul id="category-list"><li><a href='/blog/categories/apt-get'>apt-get (1)</a></li><li><a href='/blog/categories/blog'>blog (1)</a></li><li><a href='/blog/categories/fail2ban'>fail2ban (1)</a></li><li><a href='/blog/categories/git'>git (1)</a></li><li><a href='/blog/categories/markdown'>markdown (1)</a></li><li><a href='/blog/categories/note'>note (1)</a></li><li><a href='/blog/categories/octopresss'>octopresss (1)</a></li><li><a href='/blog/categories/ubuntu'>ubuntu (2)</a></li><li><a href='/blog/categories/write'>write (1)</a></li></ul>
+    <ul id="category-list"><li><a href='/blog/categories/apt-get'>apt-get (1)</a></li><li><a href='/blog/categories/autojump'>autojump (1)</a></li><li><a href='/blog/categories/blog'>blog (1)</a></li><li><a href='/blog/categories/fail2ban'>fail2ban (1)</a></li><li><a href='/blog/categories/git'>git (1)</a></li><li><a href='/blog/categories/markdown'>markdown (1)</a></li><li><a href='/blog/categories/note'>note (1)</a></li><li><a href='/blog/categories/octopresss'>octopresss (1)</a></li><li><a href='/blog/categories/ubuntu'>ubuntu (2)</a></li><li><a href='/blog/categories/write'>write (1)</a></li></ul>
 </section>
 <section>
   <h1>Category Cloud</h1>
-    <span id="tag-cloud"><a href='/blog/categories/apt-get' style='font-size: 130.0%'>apt-get(1)</a> <a href='/blog/categories/blog' style='font-size: 130.0%'>blog(1)</a> <a href='/blog/categories/fail2ban' style='font-size: 130.0%'>fail2ban(1)</a> <a href='/blog/categories/git' style='font-size: 130.0%'>git(1)</a> <a href='/blog/categories/markdown' style='font-size: 130.0%'>markdown(1)</a> <a href='/blog/categories/note' style='font-size: 130.0%'>note(1)</a> <a href='/blog/categories/octopresss' style='font-size: 130.0%'>octopresss(1)</a> <a href='/blog/categories/ubuntu' style='font-size: 160.0%'>ubuntu(2)</a> <a href='/blog/categories/write' style='font-size: 130.0%'>write(1)</a> </span>
+    <span id="tag-cloud"><a href='/blog/categories/apt-get' style='font-size: 130.0%'>apt-get(1)</a> <a href='/blog/categories/autojump' style='font-size: 130.0%'>autojump(1)</a> <a href='/blog/categories/blog' style='font-size: 130.0%'>blog(1)</a> <a href='/blog/categories/fail2ban' style='font-size: 130.0%'>fail2ban(1)</a> <a href='/blog/categories/git' style='font-size: 130.0%'>git(1)</a> <a href='/blog/categories/markdown' style='font-size: 130.0%'>markdown(1)</a> <a href='/blog/categories/note' style='font-size: 130.0%'>note(1)</a> <a href='/blog/categories/octopresss' style='font-size: 130.0%'>octopresss(1)</a> <a href='/blog/categories/ubuntu' style='font-size: 160.0%'>ubuntu(2)</a> <a href='/blog/categories/write' style='font-size: 130.0%'>write(1)</a> </span>
 </section>
 
 <section>

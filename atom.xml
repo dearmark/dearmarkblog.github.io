@@ -4,7 +4,7 @@
   <title><![CDATA[Mark's note]]></title>
   <link href="http://dearmark.tk/atom.xml" rel="self"/>
   <link href="http://dearmark.tk/"/>
-  <updated>2014-03-30T02:47:41+08:00</updated>
+  <updated>2014-03-30T03:19:45+08:00</updated>
   <id>http://dearmark.tk/</id>
   <author>
     <name><![CDATA[Mark Weng]]></name>
@@ -12,6 +12,59 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[autojump备忘]]></title>
+    <link href="http://dearmark.tk/blog/2014/03/30/autojump%E5%A4%87%E5%BF%98/"/>
+    <updated>2014-03-30T03:06:10+08:00</updated>
+    <id>http://dearmark.tk/blog/2014/03/30/autojump备忘</id>
+    <content type="html"><![CDATA[<ul>
+<li><p>Jump To A Directory That Contains <code>foo</code>:</p>
+
+<pre><code>j foo
+</code></pre></li>
+<li><p>Jump To A Child Directory</p>
+
+<p>Sometimes it&rsquo;s convenient to jump to a child directory
+(sub-directory of current directory) rather than typing out the full
+name.</p>
+
+<pre><code>jc bar
+</code></pre></li>
+<li><p>Open File Manager To Directories (instead of jumping):</p>
+
+<p>Instead of jumping to a directory, you can open a file explorer
+window (Mac Finder, Windows Explorer, GNOME Nautilus, etc.) to the
+directory instead.</p>
+
+<pre><code>jo music
+</code></pre>
+
+<p>Opening a file manager to a child directory is also supported.</p>
+
+<pre><code>jco images
+</code></pre></li>
+<li><p>Using Multiple Arguments:</p>
+
+<p> Let&rsquo;s assume the following database:</p>
+
+<pre><code> 30   /home/user/mail/inbox
+ 10   /home/user/work/inbox
+</code></pre>
+
+<p> <code>j in</code> would jump into /home/user/mail/inbox as the higher weighted
+ entry. However you can pass multiple arguments to autojump to prefer
+ a different entry. In the above example, <code>j w in</code> would then change
+ directory to /home/user/work/inbox.</p></li>
+</ul>
+
+
+<p>For more options refer to help:</p>
+
+<pre><code>autojump --help
+</code></pre>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[bash command]]></title>

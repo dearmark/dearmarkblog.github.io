@@ -5,14 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Blog Archive - Mark's note</title>
+  <title>autojump备忘 - Mark's note</title>
   <meta name="author" content="Mark Weng">
 
   
-  <meta name="description" content="Blog Archive 2014 autojump备忘
-Mar 30 2014 posted in autojump bash command
-Mar 22 2014 config Fail2Ban
-Mar 12 2014 posted in fail2ban, ubuntu apt-get &hellip;">
+  <meta name="description" content="Jump To A Directory That Contains foo: j foo Jump To A Child Directory Sometimes it&rsquo;s convenient to jump to a child directory
+(sub-directory &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -21,7 +19,7 @@ Mar 12 2014 posted in fail2ban, ubuntu apt-get &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://dearmark.tk/blog/archives/">
+  <link rel="canonical" href="http://dearmark.tk/blog/2014/03/30/autojump%E5%A4%87%E5%BF%98/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -86,116 +84,135 @@ Mar 12 2014 posted in fail2ban, ubuntu apt-get &hellip;">
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">Blog Archive</h1>
+    
+      
+        <h1 class="entry-title">Autojump备忘</h1>
+      
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-03-30T03:06:10+08:00" pubdate data-updated="true">Mar 30<span>th</span>, 2014</time>
+        
+      </p>
     
   </header>
-  
-  <div id="blog-archives">
 
 
+<div class="entry-content"><ul>
+<li><p>Jump To A Directory That Contains <code>foo</code>:</p>
 
-  
-  <h2>2014</h2>
+<pre><code>j foo
+</code></pre></li>
+<li><p>Jump To A Child Directory</p>
 
-<article>
-  
-<h1><a href="/blog/2014/03/30/autojump%E5%A4%87%E5%BF%98/">autojump备忘</a></h1>
-<time datetime="2014-03-30T03:06:10+08:00" pubdate><span class='month'>Mar</span> <span class='day'>30</span> <span class='year'>2014</span></time>
+<p>Sometimes it&rsquo;s convenient to jump to a child directory
+(sub-directory of current directory) rather than typing out the full
+name.</p>
 
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/autojump/'>autojump</a></span>
-</footer>
+<pre><code>jc bar
+</code></pre></li>
+<li><p>Open File Manager To Directories (instead of jumping):</p>
 
+<p>Instead of jumping to a directory, you can open a file explorer
+window (Mac Finder, Windows Explorer, GNOME Nautilus, etc.) to the
+directory instead.</p>
 
-</article>
+<pre><code>jo music
+</code></pre>
 
+<p>Opening a file manager to a child directory is also supported.</p>
 
+<pre><code>jco images
+</code></pre></li>
+<li><p>Using Multiple Arguments:</p>
 
-<article>
-  
-<h1><a href="/blog/2014/03/22/bash-command/">bash command</a></h1>
-<time datetime="2014-03-22T09:12:22+08:00" pubdate><span class='month'>Mar</span> <span class='day'>22</span> <span class='year'>2014</span></time>
+<p> Let&rsquo;s assume the following database:</p>
 
+<pre><code> 30   /home/user/mail/inbox
+ 10   /home/user/work/inbox
+</code></pre>
 
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2014/03/12/config-fail2ban/">config Fail2Ban</a></h1>
-<time datetime="2014-03-12T00:25:23+08:00" pubdate><span class='month'>Mar</span> <span class='day'>12</span> <span class='year'>2014</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/fail2ban/'>fail2ban</a>, <a class='category' href='/blog/categories/ubuntu/'>ubuntu</a></span>
-</footer>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2014/03/11/apt-get-command/">apt-get command</a></h1>
-<time datetime="2014-03-11T20:32:30+08:00" pubdate><span class='month'>Mar</span> <span class='day'>11</span> <span class='year'>2014</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/apt-get/'>apt-get</a>, <a class='category' href='/blog/categories/ubuntu/'>ubuntu</a></span>
-</footer>
+<p> <code>j in</code> would jump into /home/user/mail/inbox as the higher weighted
+ entry. However you can pass multiple arguments to autojump to prefer
+ a different entry. In the above example, <code>j w in</code> would then change
+ directory to /home/user/work/inbox.</p></li>
+</ul>
 
 
-</article>
+<p>For more options refer to help:</p>
 
-
-
-<article>
-  
-<h1><a href="/blog/2014/03/09/git-command/">git命令</a></h1>
-<time datetime="2014-03-09T19:39:36+08:00" pubdate><span class='month'>Mar</span> <span class='day'>09</span> <span class='year'>2014</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/git/'>git</a>, <a class='category' href='/blog/categories/note/'>note</a></span>
-</footer>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2014/03/09/markdown%E8%AF%AD%E6%B3%95/">Markdown 语法</a></h1>
-<time datetime="2014-03-09T19:36:08+08:00" pubdate><span class='month'>Mar</span> <span class='day'>09</span> <span class='year'>2014</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/markdown/'>markdown</a>, <a class='category' href='/blog/categories/write/'>write</a></span>
-</footer>
-
-
-</article>
-
-
-
-<article>
-  
-<h1><a href="/blog/2014/03/09/install-octopress/">Install and Config Octopress</a></h1>
-<time datetime="2014-03-09T02:04:19+08:00" pubdate><span class='month'>Mar</span> <span class='day'>09</span> <span class='year'>2014</span></time>
-
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/categories/blog/'>blog</a>, <a class='category' href='/blog/categories/octopresss/'>octopresss</a></span>
-</footer>
-
-
-</article>
-
+<pre><code>autojump --help
+</code></pre>
 </div>
 
+
+  <footer>
+    <p class="meta">
+      
   
+
+<span class="byline author vcard">Posted by <span class="fn">Mark Weng</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-03-30T03:06:10+08:00" pubdate data-updated="true">Mar 30<span>th</span>, 2014</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/autojump/'>autojump</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left articlenav" href="/blog/2014/03/22/bash-command/" title="Previous Post: bash command">&laquo; bash command</a>
+      
+      
+    </p>
+  </footer>
 </article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
 
 </div>
 
@@ -287,7 +304,10 @@ Mar 12 2014 posted in fail2ban, ubuntu apt-get &hellip;">
       var disqus_shortname = 'dearmark';
       
         
-        var disqus_script = 'count.js';
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://dearmark.tk/blog/2014/03/30/autojump%E5%A4%87%E5%BF%98/';
+        var disqus_url = 'http://dearmark.tk/blog/2014/03/30/autojump%E5%A4%87%E5%BF%98/';
+        var disqus_script = 'embed.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
