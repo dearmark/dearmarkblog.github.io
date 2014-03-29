@@ -6,7 +6,7 @@ comments: true
 categories: 
 - linux
 ---
-
+<!--more-->
 ###man page
     按键  进行工作
     空白键 向下翻一页
