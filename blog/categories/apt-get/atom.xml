@@ -4,7 +4,7 @@
   <title><![CDATA[Category: apt-get | Mark's note]]></title>
   <link href="http://dearmark.tk/blog/categories/apt-get/atom.xml" rel="self"/>
   <link href="http://dearmark.tk/"/>
-  <updated>2014-03-29T18:07:44+08:00</updated>
+  <updated>2014-03-29T23:52:12+08:00</updated>
   <id>http://dearmark.tk/</id>
   <author>
     <name><![CDATA[Mark Weng]]></name>
@@ -19,6 +19,9 @@
     <updated>2014-03-11T20:32:30+08:00</updated>
     <id>http://dearmark.tk/blog/2014/03/11/apt-get-command</id>
     <content type="html"><![CDATA[<h3>apt-get命令</h3>
+
+<!--more-->
+
 
 <p>下面将要介绍的所有命令都需要sudo
 使用时请将“packagename”和“string”替换成您想要安装或者查找的程序。

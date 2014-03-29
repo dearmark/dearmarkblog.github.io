@@ -4,7 +4,7 @@
   <title><![CDATA[Category: git | Mark's note]]></title>
   <link href="http://dearmark.tk/blog/categories/git/atom.xml" rel="self"/>
   <link href="http://dearmark.tk/"/>
-  <updated>2014-03-29T18:07:44+08:00</updated>
+  <updated>2014-03-29T23:52:12+08:00</updated>
   <id>http://dearmark.tk/</id>
   <author>
     <name><![CDATA[Mark Weng]]></name>
@@ -18,7 +18,10 @@
     <link href="http://dearmark.tk/blog/2014/03/09/git-command/"/>
     <updated>2014-03-09T19:39:36+08:00</updated>
     <id>http://dearmark.tk/blog/2014/03/09/git-command</id>
-    <content type="html"><![CDATA[<h2>Git配置</h2>
+    <content type="html"><![CDATA[<!--more-->
+
+
+<h2>Git配置</h2>
 
 <pre><code>git config --global user.name "robbin"   
 git config --global user.email "fankai@gmail.com"
@@ -42,7 +45,7 @@ git show            # 显示某次提交的内容
 git show $id
 
 git co  -- &lt;file&gt;   # 抛弃工作区修改
-git co  .           # 抛弃工作区修改
+git co  .           # 抛弃工作区修改,相当于用暂存区的所有文件直接覆盖本地文件
 
 git add &lt;file&gt;      # 将工作文件修改提交到本地暂存区
 git add .           # 将所有修改过的工作文件提交暂存区
@@ -188,6 +191,13 @@ git branch --set-upstream develop origin/develop
 <p>可以用"-L"参数在命令(blame)中指定开始和结束行</p>
 
 <pre><code>git blame -L 160,+10 sha1_file.c 
+</code></pre>
+
+<h3>Git清除未跟踪的文件</h3>
+
+<pre><code>git clean -df 可帮你搞定一切。
+git clean -dn  这个命令可以看看有哪此文件和目录会被删
+git clean -f 只会删文件，不会删目录
 </code></pre>
 ]]></content>
   </entry>

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: fail2ban | Mark's note]]></title>
   <link href="http://dearmark.tk/blog/categories/fail2ban/atom.xml" rel="self"/>
   <link href="http://dearmark.tk/"/>
-  <updated>2014-03-29T18:07:44+08:00</updated>
+  <updated>2014-03-29T23:52:12+08:00</updated>
   <id>http://dearmark.tk/</id>
   <author>
     <name><![CDATA[Mark Weng]]></name>
@@ -19,6 +19,9 @@
     <updated>2014-03-12T00:25:23+08:00</updated>
     <id>http://dearmark.tk/blog/2014/03/12/config-fail2ban</id>
     <content type="html"><![CDATA[<p>Fail2Ban 是一款用 Python 代码编写的入侵防御软件，它可以分析多种服务的日志文件 (例如 ssh apache postfix mysql 等) 来侦测可能的暴力攻击，并且自动创建防火墙 (例如 iptables) 规则来达到阻止攻击源访问的目的</p>
+
+<!--more-->
+
 
 <p>这里以 Debian 为例，仅考虑如何防御 ssh 攻击的情况 (例如: 多次用不存在的用户名创建 ssh 连接，多次使用不同密码尝试登陆某 ssh 账户)，安装配置步骤如下</p>
 

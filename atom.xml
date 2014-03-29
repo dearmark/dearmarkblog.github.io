@@ -4,7 +4,7 @@
   <title><![CDATA[Mark's note]]></title>
   <link href="http://dearmark.tk/atom.xml" rel="self"/>
   <link href="http://dearmark.tk/"/>
-  <updated>2014-03-29T18:07:44+08:00</updated>
+  <updated>2014-03-29T23:52:12+08:00</updated>
   <id>http://dearmark.tk/</id>
   <author>
     <name><![CDATA[Mark Weng]]></name>
@@ -28,6 +28,9 @@
     <updated>2014-03-12T00:25:23+08:00</updated>
     <id>http://dearmark.tk/blog/2014/03/12/config-fail2ban</id>
     <content type="html"><![CDATA[<p>Fail2Ban 是一款用 Python 代码编写的入侵防御软件，它可以分析多种服务的日志文件 (例如 ssh apache postfix mysql 等) 来侦测可能的暴力攻击，并且自动创建防火墙 (例如 iptables) 规则来达到阻止攻击源访问的目的</p>
+
+<!--more-->
+
 
 <p>这里以 Debian 为例，仅考虑如何防御 ssh 攻击的情况 (例如: 多次用不存在的用户名创建 ssh 连接，多次使用不同密码尝试登陆某 ssh 账户)，安装配置步骤如下</p>
 
@@ -96,6 +99,9 @@ apt-get install fail2ban
     <updated>2014-03-11T20:32:30+08:00</updated>
     <id>http://dearmark.tk/blog/2014/03/11/apt-get-command</id>
     <content type="html"><![CDATA[<h3>apt-get命令</h3>
+
+<!--more-->
+
 
 <p>下面将要介绍的所有命令都需要sudo
 使用时请将“packagename”和“string”替换成您想要安装或者查找的程序。</p>
@@ -174,7 +180,10 @@ alias agr='sudo apt-get remove'
     <link href="http://dearmark.tk/blog/2014/03/09/git-command/"/>
     <updated>2014-03-09T19:39:36+08:00</updated>
     <id>http://dearmark.tk/blog/2014/03/09/git-command</id>
-    <content type="html"><![CDATA[<h2>Git配置</h2>
+    <content type="html"><![CDATA[<!--more-->
+
+
+<h2>Git配置</h2>
 
 <pre><code>git config --global user.name "robbin"   
 git config --global user.email "fankai@gmail.com"
@@ -198,7 +207,7 @@ git show            # 显示某次提交的内容
 git show $id
 
 git co  -- &lt;file&gt;   # 抛弃工作区修改
-git co  .           # 抛弃工作区修改
+git co  .           # 抛弃工作区修改,相当于用暂存区的所有文件直接覆盖本地文件
 
 git add &lt;file&gt;      # 将工作文件修改提交到本地暂存区
 git add .           # 将所有修改过的工作文件提交暂存区
@@ -345,6 +354,13 @@ git branch --set-upstream develop origin/develop
 
 <pre><code>git blame -L 160,+10 sha1_file.c 
 </code></pre>
+
+<h3>Git清除未跟踪的文件</h3>
+
+<pre><code>git clean -df 可帮你搞定一切。
+git clean -dn  这个命令可以看看有哪此文件和目录会被删
+git clean -f 只会删文件，不会删目录
+</code></pre>
 ]]></content>
   </entry>
   
@@ -365,6 +381,9 @@ git branch --set-upstream develop origin/develop
     <content type="html"><![CDATA[<p><img src="http://dearmark.tk/images/logo.png" title="Logo" ></p>
 
 <h2>Octepress装得差不多了，记录一些事情</h2>
+
+<!--more-->
+
 
 <ul>
 <li><p>要在文章中上传图片，直接copy到/source/images目录下即可。在文章中用 <code>&lt;img src="http://dearmark.tk/images/pic_name.png" title="Caption" &gt;</code>来引用即可</p></li>
