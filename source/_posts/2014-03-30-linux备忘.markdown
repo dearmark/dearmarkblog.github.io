@@ -1,0 +1,156 @@
+---
+layout: post
+title: "linux备忘"
+date: 2014-03-30 03:25:57 +0800
+comments: true
+categories: 
+- linux
+---
+
+###man page
+    按键  进行工作
+    空白键 向下翻一页
+    [Page Down] 向下翻一页
+    [Page Up]   向上翻一页
+    [Home]  去到第一页
+    [End]   去到最后一页
+    /string 向『下』搜寻 string 这个字串，如果要搜寻 vbird 的话，就输入 /vbird
+    ?string 向『上』搜寻 string 这个字串
+    n, N    利用 / 或 ? 来搜寻字串时，可以用 n 来继续下一个搜寻 (不论是 / 或 ?) ，可以利用 N 来进行『反向』搜寻。举例来说，我以 /vbird 搜寻 vbird 字串， 那么可以 n 继续往下查询，用 N 往上查询。若以 ?vbird 向上查询 vbird 字串， 那我可以用 n 继续『向上』查询，用 N 反向查询。
+    q   结束这次的 man page
+
+###info page
+    按键  进行工作
+    空白键 向下翻一页
+    [Page Down] 向下翻一页
+    [Page Up]   向上翻一页
+    [tab]   在 node 之间移动，有 node 的地方，通常会以 * 显示。
+    [Enter] 当游标在 node 上面时，按下 Enter 可以进入该 node 。
+    b   移动游标到该 info 画面当中的第一个 node 处
+    e   移动游标到该 info 画面当中的最后一个 node 处
+    n   前往下一个 info page 处
+    p   前往上一个 info page 处
+    u   向上移动一层
+    s(/)    在 info page 当中进行搜寻
+    h   显示求助选单
+    ?   指令一览表
+
+###cd 
+    .         代表此层目录
+    ..        代表上一层目录
+    -         代表前一个工作目录
+    ~         代表『目前使用者身份』所在的家目录
+    ~account  代表 account 这个使用者的家目录
+
+    pwd∶显示目前的目录
+    pwd [-P]
+    参数∶
+    -P  ∶显示出确实的路径，而非使用连结 (link) 路径。
+
+    mkdir [-mp] 目录名称
+    参数∶
+    -m ∶设定档案的权限喔！直接设定，不需要看预设权限 (umask) 的脸色～
+    -p ∶帮助你直接将所需要的目录递回建立起来！
+    mkdir -p test1/test2/test3/test4
+    # 加了这个 -p 的参数，可以自行帮您建立多层目录！
+    mkdir -m 711 test2
+
+    rmdir [-p] 目录名称
+    参数∶
+    -p ∶连同上层『空的』目录也一起删除
+    rmdir -p test1/test2/test3/test4
+    rm -rf test 
+###环境变数 PATH
+    echo $PATH
+    PATH="$PATH":/root 直接将 /root 的路径加入 PATH 当中
+###ls
+    ls -al ~  将家目录下的所有档案列出来(含属性与隐藏档)
+    ls -al --full-time  ~ 完整的呈现档案的修改时间 
+
+###cp
+    cp ~/.bashrc bashrc
+    cp -i ~/.bashrc bashrc
+    =>cp: overwrite `basrhc'? n
+    # 重复作两次动作，由于 /tmp 底下已经存在 bashrc 了，加上 -i 参数，
+    # 则在覆盖前会询问使用者是否确定！可以按下 n 或者 y 呢！
+    # 但是，反过来说，如果不想要询问时，则加上 -f 这个参数来强制直接覆盖！
+    cp /var/log/wtmp . <==想要复制到目前的目录，最后的 . 不要忘
+    cp -a /var/log/wtmp wtmp_2 将档案的所有特性都一起复制过来,包括所属者，权限,建立的时间
+    若 ~/.bashrc 比 /tmp/bashrc 新才复制过来
+
+    cp -u ~/.bashrc /tmp/bashrc
+    # 这个 -u 的特性，是在目标档案与来源档案有差异时，才会复制的。
+    # 所以，比较常被用于『备份』的工作当中喔！ ^_^
+    将范例四造成的 bashrc_slink 复制成为 bashrc_slink_2
+
+    >tmp cp bashrc_slink bashrc_slink_2
+    >tmp ls -l bashrc_slink*
+    lrwxrwxrwx  1 root root   6 Jul 18 22:31 bashrc_slink -> bashrc
+    -rw-r--r--  1 root root 395 Jul 18 22:48 bashrc_slink_2
+    # 这个例子也是很有趣喔！原本复制的是连结档，但是却将连结档的实际档案复制过来了
+    # 也就是说，如果没有加上任何参数时，复制的是原始档案，而非连结档的属性！
+    # 若要复制连结档的属性，就得要使用 -d 或者 -a 的参数了！
+
+    将家目录的 .bashrc 及 .bash_history 复制到 /tmp 底下
+    >tmp cp ~/.bashrc ~/.bash_history /tmp
+    # 可以将多个资料一次复制到同一个目录去！
+###rm
+    > rm [-fir] 档案或目录
+    参数∶
+    -f  ∶就是 force 的意思，强制移除；
+    -i  ∶互动模式，在删除前会询问使用者是否动作
+    -r  ∶递回删除啊！最常用在目录的删除了
+    范例∶
+    范例一∶建立一档案后予以删除
+    > cd /tmp
+    >tmp cp ~/.bashrc bashrc
+    >tmp rm -i bashrc
+    rm: remove regular file `bashrc'? y
+    # 如果加上 -i 的参数就会主动询问喔！那么如果不要询问呢？就加 -f 参数啊！
+
+    范例二∶删除一个不为空的目录
+    >tmp mkdir test
+    >tmp cp ~/.bashrc test/ <== 将档案复制到此目录去，就不是空的目录了
+    >tmp rmdir test
+    rmdir: `test': Directory not empty <== 删不掉啊！因为这不是空的目录！
+    >tmp rm -rf test
+
+    范例三∶删除一个带有 - 开头的档案
+    >tmp ls *aa*
+    -rw-r--r--  1 root  root      0 Aug 22 10:52 -aaa-
+    >tmp rm -aaa-
+    rm: invalid option -- a
+    Try `rm --help' for more information.  <== 因为 "-" 是参数嘛！
+    >tmp rm ./-aaa-
+
+###mv
+    > mv [-fiu] source destination
+    > mv [options] source1 source2 source3 .... directory
+    参数∶
+    -f  ∶force 强制的意思，强制直接移动而不询问；
+    -i  ∶若目标档案 (destination) 已经存在时，就会询问是否覆盖！
+    -u  ∶若目标档案已经存在，且 source 比较新，才会更新 (update)
+    范例∶
+    范例一∶复制一档案，建立一目录，将档案移动到目录中
+    > cd /tmp
+    >tmp cp ~/.bashrc bashrc
+    >tmp mkdir mvtest
+    >tmp mv bashrc mvtest
+    # 将某个档案移动到某个目录去，就是这样做！
+
+    范例二∶将刚刚的目录名称更名为 mvtest2
+    >tmp mv mvtest mvtest2 <== 这样就更名了！简单～
+    # 其实在 Linux 底下还有个有趣的指令，名称为 rename ，
+    # 该指令则专职进行档案的更名呢！用途也是不少～可以参阅 man rename 喔！
+
+    范例三∶再建立两个档案，再全部移动到 /tmp/mvtest2 当中
+    >tmp cp ~/.bashrc bashrc1
+    >tmp cp ~/.bashrc bashrc2
+    >tmp mv bashrc1 bashrc2 mvtest2
+    # 注意到这边，如果有多个来源档案或目录，则最后一个目标档一定是『目录！』
+    # 意思是说，将所有的资料移动到该目录的意思！
+    ###取得路径的档案名称与目录名称
+    > basename /etc/sysconfig/network
+    network  <== 很简单！就取得最后的档名～
+    > dirname /etc/sysconfig/network
+    /etc/sysconfig  <== 取得的变成目录名了！
