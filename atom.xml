@@ -4,7 +4,7 @@
   <title><![CDATA[Mark's note]]></title>
   <link href="http://dearmark.tk/atom.xml" rel="self"/>
   <link href="http://dearmark.tk/"/>
-  <updated>2014-03-30T00:37:48+08:00</updated>
+  <updated>2014-03-30T01:18:56+08:00</updated>
   <id>http://dearmark.tk/</id>
   <author>
     <name><![CDATA[Mark Weng]]></name>
@@ -366,9 +366,9 @@ git clean -f 只会删文件，不会删目录
   
   <entry>
     <title type="html"><![CDATA[Markdown 语法]]></title>
-    <link href="http://dearmark.tk/blog/2014/03/09/markdown%E8%AF%AD%E6%B3%95/"/>
+    <link href="http://dearmark.tk/blog/2014/03/09/markdowngrammar/"/>
     <updated>2014-03-09T19:36:08+08:00</updated>
-    <id>http://dearmark.tk/blog/2014/03/09/markdown语法</id>
+    <id>http://dearmark.tk/blog/2014/03/09/markdowngrammar</id>
     <content type="html"><![CDATA[
 ]]></content>
   </entry>
