@@ -4,7 +4,7 @@
   <title><![CDATA[Mark's note]]></title>
   <link href="http://dearmark.tk/atom.xml" rel="self"/>
   <link href="http://dearmark.tk/"/>
-  <updated>2014-03-15T21:31:05+08:00</updated>
+  <updated>2014-03-29T18:07:44+08:00</updated>
   <id>http://dearmark.tk/</id>
   <author>
     <name><![CDATA[Mark Weng]]></name>
@@ -12,6 +12,15 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[bash command]]></title>
+    <link href="http://dearmark.tk/blog/2014/03/22/bash-command/"/>
+    <updated>2014-03-22T09:12:22+08:00</updated>
+    <id>http://dearmark.tk/blog/2014/03/22/bash-command</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[config Fail2Ban]]></title>
@@ -29,14 +38,10 @@ apt-get install fail2ban
 </code></pre>
 
 <ol>
-<li>(从 jail.conf 模板) 创建配置文件 jail.local</li>
-</ol>
+<li><p>(从 jail.conf 模板) 创建配置文件 jail.local</p>
 
-
-<p>cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local`</p>
-
-<ol>
-<li>编辑配置文件</li>
+<p> cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local</p></li>
+<li><p>编辑配置文件</p></li>
 </ol>
 
 
@@ -327,6 +332,18 @@ git remote set-head origin master   # 设置远程仓库的HEAD指向master分�
 
 <pre><code>git branch --set-upstream master origin/master
 git branch --set-upstream develop origin/develop
+</code></pre>
+
+<h3>Git Blame</h3>
+
+<p>如果你要查看文件的每个部分是谁修改的, 那么 git blame 就是不二选择. 只要运行&#8217;git blame [filename]&lsquo;, 你就会得到整个文件的每一行的详细修改信息:包括SHA串,日期和作者</p>
+
+<pre><code>git blame sha1_file.c
+</code></pre>
+
+<p>可以用&#8221;-L&#8221;参数在命令(blame)中指定开始和结束行</p>
+
+<pre><code>git blame -L 160,+10 sha1_file.c 
 </code></pre>
 ]]></content>
   </entry>

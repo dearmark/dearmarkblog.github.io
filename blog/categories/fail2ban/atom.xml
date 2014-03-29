@@ -4,7 +4,7 @@
   <title><![CDATA[Category: fail2ban | Mark's note]]></title>
   <link href="http://dearmark.tk/blog/categories/fail2ban/atom.xml" rel="self"/>
   <link href="http://dearmark.tk/"/>
-  <updated>2014-03-15T21:31:05+08:00</updated>
+  <updated>2014-03-29T18:07:44+08:00</updated>
   <id>http://dearmark.tk/</id>
   <author>
     <name><![CDATA[Mark Weng]]></name>
@@ -29,13 +29,9 @@ apt-get install fail2ban
 </code></pre>
 
 <ol>
-<li>(从 jail.conf 模板) 创建配置文件 jail.local</li>
-</ol>
+<li><p>(从 jail.conf 模板) 创建配置文件 jail.local</p>
 
-
-<p>cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local`</p>
-
-<ol>
+<p> cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local</p></li>
 <li><p>编辑配置文件
 <code>bash
  nano /etc/fail2ban/jail.local

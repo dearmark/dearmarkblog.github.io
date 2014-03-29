@@ -9,7 +9,8 @@
   <meta name="author" content="Mark Weng">
 
   
-  <meta name="description" content="Fail2Ban 是一款用 Python 代码编写的入侵防御软件，它可以分析多种服务的日志文件 (例如 ssh apache postfix mysql 等) 来侦测可能的暴力攻击，并且自动创建防火墙 (例如 iptables) 规则来达到阻止攻击源访问的目的 这里以 Debian 为例， &hellip;">
+  <meta name="description" content="
+">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -91,6 +92,44 @@
   <header>
     
       <!-- Now we're back to normal posts. Note the links used under href in both headers.-->
+        <h1 class="entry-title"><a href="/blog/2014/03/22/bash-command/">Bash Command</a></h1>
+      
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-03-22T09:12:22+08:00" pubdate data-updated="true">Mar 22<span>nd</span>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content">
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <!-- Now we're back to normal posts. Note the links used under href in both headers.-->
         <h1 class="entry-title"><a href="/blog/2014/03/12/config-fail2ban/">Config Fail2Ban</a></h1>
       
     
@@ -126,14 +165,10 @@ apt-get install fail2ban
 </code></pre>
 
 <ol>
-<li>(从 jail.conf 模板) 创建配置文件 jail.local</li>
-</ol>
+<li><p>(从 jail.conf 模板) 创建配置文件 jail.local</p>
 
-
-<p>cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local`</p>
-
-<ol>
-<li>编辑配置文件</li>
+<p> cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local</p></li>
+<li><p>编辑配置文件</p></li>
 </ol>
 
 
@@ -483,6 +518,18 @@ git remote set-head origin master   # 设置远程仓库的HEAD指向master分�
 <pre><code>git branch --set-upstream master origin/master
 git branch --set-upstream develop origin/develop
 </code></pre>
+
+<h3>Git Blame</h3>
+
+<p>如果你要查看文件的每个部分是谁修改的, 那么 git blame 就是不二选择. 只要运行&#8217;git blame [filename]&lsquo;, 你就会得到整个文件的每一行的详细修改信息:包括SHA串,日期和作者</p>
+
+<pre><code>git blame sha1_file.c
+</code></pre>
+
+<p>可以用&#8221;-L&#8221;参数在命令(blame)中指定开始和结束行</p>
+
+<pre><code>git blame -L 160,+10 sha1_file.c 
+</code></pre>
 </div>
   
   
@@ -613,6 +660,10 @@ git branch --set-upstream develop origin/develop
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2014/03/22/bash-command/">Bash Command</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2014/03/12/config-fail2ban/">Config Fail2Ban</a>
       </li>
     
@@ -626,10 +677,6 @@ git branch --set-upstream develop origin/develop
     
       <li class="post">
         <a href="/blog/2014/03/09/markdown%E8%AF%AD%E6%B3%95/">Markdown 语法</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/03/09/install-octopress/">Install and Config Octopress</a>
       </li>
     
   </ul>

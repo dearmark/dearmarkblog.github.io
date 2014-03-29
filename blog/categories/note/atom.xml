@@ -4,7 +4,7 @@
   <title><![CDATA[Category: note | Mark's note]]></title>
   <link href="http://dearmark.tk/blog/categories/note/atom.xml" rel="self"/>
   <link href="http://dearmark.tk/"/>
-  <updated>2014-03-15T21:31:05+08:00</updated>
+  <updated>2014-03-29T18:07:44+08:00</updated>
   <id>http://dearmark.tk/</id>
   <author>
     <name><![CDATA[Mark Weng]]></name>
@@ -176,6 +176,18 @@ git remote set-head origin master   # 设置远程仓库的HEAD指向master分�
 
 <pre><code>git branch --set-upstream master origin/master
 git branch --set-upstream develop origin/develop
+</code></pre>
+
+<h3>Git Blame</h3>
+
+<p>如果你要查看文件的每个部分是谁修改的, 那么 git blame 就是不二选择. 只要运行'git blame [filename]&lsquo;, 你就会得到整个文件的每一行的详细修改信息:包括SHA串,日期和作者</p>
+
+<pre><code>git blame sha1_file.c
+</code></pre>
+
+<p>可以用"-L"参数在命令(blame)中指定开始和结束行</p>
+
+<pre><code>git blame -L 160,+10 sha1_file.c 
 </code></pre>
 ]]></content>
   </entry>
