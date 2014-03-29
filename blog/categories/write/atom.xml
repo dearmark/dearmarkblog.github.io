@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: 写作 | Mark's note]]></title>
-  <link href="http://dearmark.tk/blog/categories/%E5%86%99%E4%BD%9C/atom.xml" rel="self"/>
+  <title><![CDATA[Category: write | Mark's note]]></title>
+  <link href="http://dearmark.tk/blog/categories/write/atom.xml" rel="self"/>
   <link href="http://dearmark.tk/"/>
-  <updated>2014-03-30T01:49:14+08:00</updated>
+  <updated>2014-03-30T02:47:41+08:00</updated>
   <id>http://dearmark.tk/</id>
   <author>
     <name><![CDATA[Mark Weng]]></name>
