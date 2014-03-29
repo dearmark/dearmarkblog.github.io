@@ -2,4 +2,4 @@
 # push.sh : publish & commit with a single command
 git add source
 git commit -am "`date`" && git push origin source
-bundler Exec rake gen_deploy
+bundler exec rake gen_deploy
