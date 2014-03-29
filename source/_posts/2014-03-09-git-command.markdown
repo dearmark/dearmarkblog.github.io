@@ -7,7 +7,7 @@ categories:
 - git
 - note
 ---
-
+<!--more-->
 ## Git配置
     git config --global user.name "robbin"   
     git config --global user.email "fankai@gmail.com"
@@ -30,7 +30,7 @@ categories:
     git show $id
 
     git co  -- <file>   # 抛弃工作区修改
-    git co  .           # 抛弃工作区修改
+    git co  .           # 抛弃工作区修改,相当于用暂存区的所有文件直接覆盖本地文件
 
     git add <file>      # 将工作文件修改提交到本地暂存区
     git add .           # 将所有修改过的工作文件提交暂存区
@@ -159,3 +159,12 @@ Mac上可以使用tig代替diff和log，`brew install tig`
 可以用"-L"参数在命令(blame)中指定开始和结束行
 
     git blame -L 160,+10 sha1_file.c 
+
+### Git清除未跟踪的文件
+    git clean -df 可帮你搞定一切。
+    git clean -dn  这个命令可以看看有哪此文件和目录会被删
+    git clean -f 只会删文件，不会删目录
+
+
+
+

@@ -10,7 +10,7 @@ categories:
 {% img /images/logo.png Logo%}
 
 ## Octepress装得差不多了，记录一些事情
-
+<!--more-->
 * 要在文章中上传图片，直接copy到/source/images目录下即可。在文章中用 `{% img /images/pic_name.png Caption %}`来引用即可
 
 * 在文章中插入代码，用` ```[language] 这儿放你要插入的代码即可。``` `

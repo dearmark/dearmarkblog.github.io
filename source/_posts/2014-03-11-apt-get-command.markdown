@@ -9,7 +9,7 @@ categories:
 ---
 ###apt-get命令
 
-
+<!--more-->
 下面将要介绍的所有命令都需要sudo
 使用时请将“packagename”和“string”替换成您想要安装或者查找的程序。
 ``` bash
