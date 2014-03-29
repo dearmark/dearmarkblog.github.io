@@ -4,7 +4,7 @@
   <title><![CDATA[Category: linux | Mark's note]]></title>
   <link href="http://dearmark.tk/blog/categories/linux/atom.xml" rel="self"/>
   <link href="http://dearmark.tk/"/>
-  <updated>2014-03-30T04:23:38+08:00</updated>
+  <updated>2014-03-30T06:29:16+08:00</updated>
   <id>http://dearmark.tk/</id>
   <author>
     <name><![CDATA[Mark Weng]]></name>
@@ -18,7 +18,10 @@
     <link href="http://dearmark.tk/blog/2014/03/30/linux%E5%A4%87%E5%BF%98/"/>
     <updated>2014-03-30T03:25:57+08:00</updated>
     <id>http://dearmark.tk/blog/2014/03/30/linux备忘</id>
-    <content type="html"><![CDATA[<h3>man page</h3>
+    <content type="html"><![CDATA[<!--more-->
+
+
+<h3>man page</h3>
 
 <pre><code>按键  进行工作
 空白键 向下翻一页

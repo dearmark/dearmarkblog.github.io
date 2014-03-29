@@ -9,14 +9,7 @@
   <meta name="author" content="Mark Weng">
 
   
-  <meta name="description" content="man page 按键 进行工作
-空白键 向下翻一页
-[Page Down] 向下翻一页
-[Page Up] 向上翻一页
-[Home] 去到第一页
-[End] 去到最后一页
-/string 向『下』搜寻 string 这个字串，如果要搜寻 vbird 的话，就输入 /vbird
-?string 向 &hellip;">
+  <meta name="description" content="选择类 Ctrl+D 选中光标所占的文本，继续操作则会选中下一个相同的文本。 Alt+F3 选中文本按下快捷键，即可一次性选择全部的相同文本进行同时编辑。举个栗子：快速选中并更改所有相同的变量名、函数名等。 Ctrl+L 选中整行，继续操作则继续选择下一行，效果和Shift+↓ 效果一样。 &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -98,6 +91,170 @@
   <header>
     
       <!-- Now we're back to normal posts. Note the links used under href in both headers.-->
+        <h1 class="entry-title"><a href="/blog/2014/03/30/sublime-text3-memo/">Sublime Text 3快捷键</a></h1>
+      
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-03-30T06:13:25+08:00" pubdate data-updated="true">Mar 30<span>th</span>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h2>选择类</h2>
+
+<p>Ctrl+D 选中光标所占的文本，继续操作则会选中下一个相同的文本。</p>
+
+<p>Alt+F3 选中文本按下快捷键，即可一次性选择全部的相同文本进行同时编辑。举个栗子：快速选中并更改所有相同的变量名、函数名等。</p>
+
+<p>Ctrl+L 选中整行，继续操作则继续选择下一行，效果和Shift+↓ 效果一样。</p>
+
+<p>Ctrl+Shift+L 先选中多行，再按下快捷键，会在每行行尾插入光标，即可同时编辑这些行。</p>
+
+<p>Ctrl+Shift+M 选择括号内的内容（继续选择父括号）。举个栗子：快速选中删除函数中的代码，重写函数体代码或重写括号内里的内容。</p>
+
+<p>Ctrl+M 光标移动至括号内结束或开始的位置。</p>
+
+<p>Ctrl+Enter 在下一行插入新行。举个栗子：即使光标不在行尾，也能快速向下插入一行。</p>
+
+<p>Ctrl+Shift+Enter 在上一行插入新行。举个栗子：即使光标不在行首，也能快速向上插入一行。</p>
+
+<p>Ctrl+Shift+[ 选中代码，按下快捷键，折叠代码。</p>
+
+<p>Ctrl+Shift+] 选中代码，按下快捷键，展开代码。</p>
+
+<p>Ctrl+K+0 展开所有折叠代码。</p>
+
+<p>Ctrl+← 向左单位性地移动光标，快速移动光标。</p>
+
+<p>Ctrl+→ 向右单位性地移动光标，快速移动光标。</p>
+
+<p>shift+↑ 向上选中多行。</p>
+
+<p>shift+↓ 向下选中多行。</p>
+
+<p>Shift+← 向左选中文本。</p>
+
+<p>Shift+→ 向右选中文本。</p>
+
+<p>Ctrl+Shift+← 向左单位性地选中文本。</p>
+
+<p>Ctrl+Shift+→ 向右单位性地选中文本。</p>
+
+<p>Ctrl+Shift+↑ 将光标所在行和上一行代码互换（将光标所在行插入到上一行之前）。</p>
+
+<p>Ctrl+Shift+↓ 将光标所在行和下一行代码互换（将光标所在行插入到下一行之后）。</p>
+
+<p>Ctrl+Alt+↑ 向上添加多行光标，可同时编辑多行。</p>
+
+<p>Ctrl+Alt+↓ 向下添加多行光标，可同时编辑多行。</p>
+
+<h2>编辑类</h2>
+
+<p>Ctrl+J 合并选中的多行代码为一行。举个栗子：将多行格式的CSS属性合并为一行。</p>
+
+<p>Ctrl+Shift+D 复制光标所在整行，插入到下一行。</p>
+
+<p>Tab 向右缩进。</p>
+
+<p>Shift+Tab 向左缩进。</p>
+
+<p>Ctrl+K+K 从光标处开始删除代码至行尾。</p>
+
+<p>Ctrl+Shift+K 删除整行。</p>
+
+<p>Ctrl+/ 注释单行。</p>
+
+<p>Ctrl+Shift+/ 注释多行。</p>
+
+<p>Ctrl+K+U 转换大写。</p>
+
+<p>Ctrl+K+L 转换小写。</p>
+
+<p>Ctrl+Z 撤销。</p>
+
+<p>Ctrl+Y 恢复撤销。</p>
+
+<p>Ctrl+U 软撤销，感觉和Gtrl+Z一样。</p>
+
+<p>Ctrl+F2 设置书签</p>
+
+<p>Ctrl+T 左右字母互换。</p>
+
+<p>F6 单词检测拼写</p>
+
+<h2>搜索类</h2>
+
+<p>Ctrl+F 打开底部搜索框，查找关键字。</p>
+
+<p>Ctrl+shift+F 在文件夹内查找，与普通编辑器不同的地方是sublime允许添加多个文件夹进行查找，略高端，未研究。</p>
+
+<p>Ctrl+P 打开搜索框。举个栗子：1、输入当前项目中的文件名，快速搜索文件，2、输入@和关键字，查找文件中函数名，3、输入：和数字，跳转到文件中该行代码，4、输入#和关键字，查找变量名。</p>
+
+<p>Ctrl+G 打开搜索框，自动带：，输入数字跳转到该行代码。举个栗子：在页面代码比较长的文件中快速定位。</p>
+
+<p>Ctrl+R 打开搜索框，自动带@，输入关键字，查找文件中的函数名。举个栗子：在函数较多的页面快速查找某个函数。</p>
+
+<p>Ctrl+：打开搜索框，自动带#，输入关键字，查找文件中的变量名、属性名等。</p>
+
+<p>Ctrl+Shift+P 打开命令框。场景栗子：打开命名框，输入关键字，调用sublime text或插件的功能，例如使用package安装插件。</p>
+
+<p>Esc 退出光标多行选择，退出搜索框，命令框等。</p>
+
+<h2>显示类</h2>
+
+<p>Ctrl+Tab 按文件浏览过的顺序，切换当前窗口的标签页。</p>
+
+<p>Ctrl+PageDown 向左切换当前窗口的标签页。</p>
+
+<p>Ctrl+PageUp 向右切换当前窗口的标签页。</p>
+
+<p>Alt+Shift+1窗口分屏，恢复默认1屏（非小键盘的数字）</p>
+
+<p>Alt+Shift+2 左右分屏-2列</p>
+
+<p>Alt+Shift+3 左右分屏-3列</p>
+
+<p>Alt+Shift+4 左右分屏-4列</p>
+
+<p>Alt+Shift+5 等分4屏</p>
+
+<p>Alt+Shift+8 垂直分屏-2屏</p>
+
+<p>Alt+Shift+9 垂直分屏-3屏</p>
+
+<p>Ctrl+K+B 开启/关闭侧边栏。</p>
+
+<p>F11 全屏模式</p>
+
+<p>Shift+F11 免打扰模式</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <!-- Now we're back to normal posts. Note the links used under href in both headers.-->
         <h1 class="entry-title"><a href="/blog/2014/03/30/linux%E5%A4%87%E5%BF%98/">Linux备忘</a></h1>
       
     
@@ -122,174 +279,12 @@
   </header>
 
 
-  <div class="entry-content"><h3>man page</h3>
-
-<pre><code>按键  进行工作
-空白键 向下翻一页
-[Page Down] 向下翻一页
-[Page Up]   向上翻一页
-[Home]  去到第一页
-[End]   去到最后一页
-/string 向『下』搜寻 string 这个字串，如果要搜寻 vbird 的话，就输入 /vbird
-?string 向『上』搜寻 string 这个字串
-n, N    利用 / 或 ? 来搜寻字串时，可以用 n 来继续下一个搜寻 (不论是 / 或 ?) ，可以利用 N 来进行『反向』搜寻。举例来说，我以 /vbird 搜寻 vbird 字串， 那么可以 n 继续往下查询，用 N 往上查询。若以 ?vbird 向上查询 vbird 字串， 那我可以用 n 继续『向上』查询，用 N 反向查询。
-q   结束这次的 man page
-</code></pre>
-
-<h3>info page</h3>
-
-<pre><code>按键  进行工作
-空白键 向下翻一页
-[Page Down] 向下翻一页
-[Page Up]   向上翻一页
-[tab]   在 node 之间移动，有 node 的地方，通常会以 * 显示。
-[Enter] 当游标在 node 上面时，按下 Enter 可以进入该 node 。
-b   移动游标到该 info 画面当中的第一个 node 处
-e   移动游标到该 info 画面当中的最后一个 node 处
-n   前往下一个 info page 处
-p   前往上一个 info page 处
-u   向上移动一层
-s(/)    在 info page 当中进行搜寻
-h   显示求助选单
-?   指令一览表
-</code></pre>
-
-<h3>cd</h3>
-
-<pre><code>.         代表此层目录
-..        代表上一层目录
--         代表前一个工作目录
-~         代表『目前使用者身份』所在的家目录
-~account  代表 account 这个使用者的家目录
-
-pwd∶显示目前的目录
-pwd [-P]
-参数∶
--P  ∶显示出确实的路径，而非使用连结 (link) 路径。
-
-mkdir [-mp] 目录名称
-参数∶
--m ∶设定档案的权限喔！直接设定，不需要看预设权限 (umask) 的脸色～
--p ∶帮助你直接将所需要的目录递回建立起来！
-mkdir -p test1/test2/test3/test4
-# 加了这个 -p 的参数，可以自行帮您建立多层目录！
-mkdir -m 711 test2
-
-rmdir [-p] 目录名称
-参数∶
--p ∶连同上层『空的』目录也一起删除
-rmdir -p test1/test2/test3/test4
-rm -rf test 
-</code></pre>
-
-<h3>环境变数 PATH</h3>
-
-<pre><code>echo $PATH
-PATH="$PATH":/root 直接将 /root 的路径加入 PATH 当中
-</code></pre>
-
-<h3>ls</h3>
-
-<pre><code>ls -al ~  将家目录下的所有档案列出来(含属性与隐藏档)
-ls -al --full-time  ~ 完整的呈现档案的修改时间 
-</code></pre>
-
-<h3>cp</h3>
-
-<pre><code>cp ~/.bashrc bashrc
-cp -i ~/.bashrc bashrc
-=&gt;cp: overwrite `basrhc'? n
-# 重复作两次动作，由于 /tmp 底下已经存在 bashrc 了，加上 -i 参数，
-# 则在覆盖前会询问使用者是否确定！可以按下 n 或者 y 呢！
-# 但是，反过来说，如果不想要询问时，则加上 -f 这个参数来强制直接覆盖！
-cp /var/log/wtmp . &lt;==想要复制到目前的目录，最后的 . 不要忘
-cp -a /var/log/wtmp wtmp_2 将档案的所有特性都一起复制过来,包括所属者，权限,建立的时间
-若 ~/.bashrc 比 /tmp/bashrc 新才复制过来
-
-cp -u ~/.bashrc /tmp/bashrc
-# 这个 -u 的特性，是在目标档案与来源档案有差异时，才会复制的。
-# 所以，比较常被用于『备份』的工作当中喔！ ^_^
-将范例四造成的 bashrc_slink 复制成为 bashrc_slink_2
-
-&gt;tmp cp bashrc_slink bashrc_slink_2
-&gt;tmp ls -l bashrc_slink*
-lrwxrwxrwx  1 root root   6 Jul 18 22:31 bashrc_slink -&gt; bashrc
--rw-r--r--  1 root root 395 Jul 18 22:48 bashrc_slink_2
-# 这个例子也是很有趣喔！原本复制的是连结档，但是却将连结档的实际档案复制过来了
-# 也就是说，如果没有加上任何参数时，复制的是原始档案，而非连结档的属性！
-# 若要复制连结档的属性，就得要使用 -d 或者 -a 的参数了！
-
-将家目录的 .bashrc 及 .bash_history 复制到 /tmp 底下
-&gt;tmp cp ~/.bashrc ~/.bash_history /tmp
-# 可以将多个资料一次复制到同一个目录去！
-</code></pre>
-
-<h3>rm</h3>
-
-<pre><code>&gt; rm [-fir] 档案或目录
-参数∶
--f  ∶就是 force 的意思，强制移除；
--i  ∶互动模式，在删除前会询问使用者是否动作
--r  ∶递回删除啊！最常用在目录的删除了
-范例∶
-范例一∶建立一档案后予以删除
-&gt; cd /tmp
-&gt;tmp cp ~/.bashrc bashrc
-&gt;tmp rm -i bashrc
-rm: remove regular file `bashrc'? y
-# 如果加上 -i 的参数就会主动询问喔！那么如果不要询问呢？就加 -f 参数啊！
-
-范例二∶删除一个不为空的目录
-&gt;tmp mkdir test
-&gt;tmp cp ~/.bashrc test/ &lt;== 将档案复制到此目录去，就不是空的目录了
-&gt;tmp rmdir test
-rmdir: `test': Directory not empty &lt;== 删不掉啊！因为这不是空的目录！
-&gt;tmp rm -rf test
-
-范例三∶删除一个带有 - 开头的档案
-&gt;tmp ls *aa*
--rw-r--r--  1 root  root      0 Aug 22 10:52 -aaa-
-&gt;tmp rm -aaa-
-rm: invalid option -- a
-Try `rm --help' for more information.  &lt;== 因为 "-" 是参数嘛！
-&gt;tmp rm ./-aaa-
-</code></pre>
-
-<h3>mv</h3>
-
-<pre><code>&gt; mv [-fiu] source destination
-&gt; mv [options] source1 source2 source3 .... directory
-参数∶
--f  ∶force 强制的意思，强制直接移动而不询问；
--i  ∶若目标档案 (destination) 已经存在时，就会询问是否覆盖！
--u  ∶若目标档案已经存在，且 source 比较新，才会更新 (update)
-范例∶
-范例一∶复制一档案，建立一目录，将档案移动到目录中
-&gt; cd /tmp
-&gt;tmp cp ~/.bashrc bashrc
-&gt;tmp mkdir mvtest
-&gt;tmp mv bashrc mvtest
-# 将某个档案移动到某个目录去，就是这样做！
-
-范例二∶将刚刚的目录名称更名为 mvtest2
-&gt;tmp mv mvtest mvtest2 &lt;== 这样就更名了！简单～
-# 其实在 Linux 底下还有个有趣的指令，名称为 rename ，
-# 该指令则专职进行档案的更名呢！用途也是不少～可以参阅 man rename 喔！
-
-范例三∶再建立两个档案，再全部移动到 /tmp/mvtest2 当中
-&gt;tmp cp ~/.bashrc bashrc1
-&gt;tmp cp ~/.bashrc bashrc2
-&gt;tmp mv bashrc1 bashrc2 mvtest2
-# 注意到这边，如果有多个来源档案或目录，则最后一个目标档一定是『目录！』
-# 意思是说，将所有的资料移动到该目录的意思！
-###取得路径的档案名称与目录名称
-&gt; basename /etc/sysconfig/network
-network  &lt;== 很简单！就取得最后的档名～
-&gt; dirname /etc/sysconfig/network
-/etc/sysconfig  &lt;== 取得的变成目录名了！
-</code></pre>
-</div>
+  <div class="entry-content"></div>
   
+  
+    <footer>
+      <a rel="full-article" href="/blog/2014/03/30/linux%E5%A4%87%E5%BF%98/">Read on &rarr;</a>
+    </footer>
   
 
 
@@ -638,6 +633,10 @@ directory instead.</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2014/03/30/sublime-text3-memo/">Sublime Text 3快捷键</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2014/03/30/linux%E5%A4%87%E5%BF%98/">Linux备忘</a>
       </li>
     
@@ -653,10 +652,6 @@ directory instead.</p>
         <a href="/blog/2014/03/12/config-fail2ban/">Config Fail2Ban</a>
       </li>
     
-      <li class="post">
-        <a href="/blog/2014/03/11/apt-get-command/">Apt-get Command</a>
-      </li>
-    
   </ul>
 </section>
 
@@ -664,11 +659,11 @@ directory instead.</p>
 
 <section>
   <h1>Categories</h1>
-    <ul id="category-list"><li><a href='/blog/categories/apt-get'>apt-get (1)</a></li><li><a href='/blog/categories/autojump'>autojump (1)</a></li><li><a href='/blog/categories/blog'>blog (1)</a></li><li><a href='/blog/categories/fail2ban'>fail2ban (1)</a></li><li><a href='/blog/categories/git'>git (1)</a></li><li><a href='/blog/categories/linux'>linux (1)</a></li><li><a href='/blog/categories/markdown'>markdown (1)</a></li><li><a href='/blog/categories/note'>note (1)</a></li><li><a href='/blog/categories/octopresss'>octopresss (1)</a></li><li><a href='/blog/categories/ubuntu'>ubuntu (2)</a></li><li><a href='/blog/categories/write'>write (1)</a></li></ul>
+    <ul id="category-list"><li><a href='/blog/categories/apt-get'>apt-get (1)</a></li><li><a href='/blog/categories/autojump'>autojump (1)</a></li><li><a href='/blog/categories/blog'>blog (1)</a></li><li><a href='/blog/categories/fail2ban'>fail2ban (1)</a></li><li><a href='/blog/categories/git'>git (1)</a></li><li><a href='/blog/categories/linux'>linux (1)</a></li><li><a href='/blog/categories/markdown'>markdown (1)</a></li><li><a href='/blog/categories/note'>note (1)</a></li><li><a href='/blog/categories/octopresss'>octopresss (1)</a></li><li><a href='/blog/categories/sublime-text'>sublime text (1)</a></li><li><a href='/blog/categories/ubuntu'>ubuntu (2)</a></li><li><a href='/blog/categories/write'>write (1)</a></li></ul>
 </section>
 <section>
   <h1>Category Cloud</h1>
-    <span id="tag-cloud"><a href='/blog/categories/apt-get' style='font-size: 130.0%'>apt-get(1)</a> <a href='/blog/categories/autojump' style='font-size: 130.0%'>autojump(1)</a> <a href='/blog/categories/blog' style='font-size: 130.0%'>blog(1)</a> <a href='/blog/categories/fail2ban' style='font-size: 130.0%'>fail2ban(1)</a> <a href='/blog/categories/git' style='font-size: 130.0%'>git(1)</a> <a href='/blog/categories/linux' style='font-size: 130.0%'>linux(1)</a> <a href='/blog/categories/markdown' style='font-size: 130.0%'>markdown(1)</a> <a href='/blog/categories/note' style='font-size: 130.0%'>note(1)</a> <a href='/blog/categories/octopresss' style='font-size: 130.0%'>octopresss(1)</a> <a href='/blog/categories/ubuntu' style='font-size: 160.0%'>ubuntu(2)</a> <a href='/blog/categories/write' style='font-size: 130.0%'>write(1)</a> </span>
+    <span id="tag-cloud"><a href='/blog/categories/apt-get' style='font-size: 130.0%'>apt-get(1)</a> <a href='/blog/categories/autojump' style='font-size: 130.0%'>autojump(1)</a> <a href='/blog/categories/blog' style='font-size: 130.0%'>blog(1)</a> <a href='/blog/categories/fail2ban' style='font-size: 130.0%'>fail2ban(1)</a> <a href='/blog/categories/git' style='font-size: 130.0%'>git(1)</a> <a href='/blog/categories/linux' style='font-size: 130.0%'>linux(1)</a> <a href='/blog/categories/markdown' style='font-size: 130.0%'>markdown(1)</a> <a href='/blog/categories/note' style='font-size: 130.0%'>note(1)</a> <a href='/blog/categories/octopresss' style='font-size: 130.0%'>octopresss(1)</a> <a href='/blog/categories/sublime-text' style='font-size: 130.0%'>sublime text(1)</a> <a href='/blog/categories/ubuntu' style='font-size: 160.0%'>ubuntu(2)</a> <a href='/blog/categories/write' style='font-size: 130.0%'>write(1)</a> </span>
 </section>
 
 <section>
